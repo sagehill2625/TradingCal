@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --color-primary: #3B82F6;
+  --color-background: #030712;
+  --color-surface: #111827;
+  --color-hover: #1F2937;
+}
+
+body {
+  background-color: var(--color-background);
+  color-scheme: light dark;
+}
+
+.text-theme-base {
+  @apply text-gray-900 dark:text-white;
+}
+
+.text-theme-muted {
+  @apply text-gray-600 dark:text-gray-400;
+}
+
+.border-theme {
+  @apply border-gray-200 dark:border-gray-700;
+}
+
+.bg-theme-card {
+  @apply bg-white dark:bg-gray-800;
+}
+
+/* Markdown styles */
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  @apply text-white font-bold mb-4;
+}
+
+.prose h1 {
+  @apply text-2xl;
+}
+
+.prose h2 {
+  @apply text-xl;
+}
+
+.prose h3 {
+  @apply text-lg;
+}
+
+.prose p {
+  @apply text-gray-300 mb-4;
+}
+
+.prose ul {
+  @apply space-y-2 mb-4;
+}
+
+.prose li {
+  @apply text-gray-300;
+}
+
+.prose strong {
+  @apply text-white;
+}
+
+.prose em {
+  @apply text-gray-400;
+}
+
+.prose code {
+  @apply bg-gray-700 px-1.5 py-0.5 rounded text-white;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-gray-700 pl-4 italic text-gray-400;
+}
